@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaurUlangMandiri - Gerakan Masyarakat Peduli Sampah</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts (Opsional, untuk font yang lebih menarik) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Kustom */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Smooth Scrolling untuk navigasi */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section dengan Background Image */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-section h1 {
+            font-weight: 700;
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+        }
+
+        /* Efek Hover pada Kartu */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Style untuk section icon */
+        .icon-box {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .icon-box i {
+            font-size: 3rem;
+            color: #28a745; /* Warna hijau untuk tema daur ulang */
+            margin-bottom: 15px;
+        }
+
+        /* Style untuk bagian cara memulai */
+        .step-box {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .step-box .step-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+        }
+        
+        footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-recycle"></i> DaurUlangMandiri
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mengapa">Mengapa?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jenis-sampah">Jenis Sampah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cara-memulai">Cara Memulai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="beranda" class="hero-section">
+            <div class="container">
+                <h1 class="display-4">Bersama Selamatkan Bumi</h1>
+                <p class="lead">Mulai dari hal kecil: daur ulang sampah di rumah dan lingkungan Anda.</p>
+                <a href="#mengapa" class="btn btn-primary btn-lg mt-3">Pelajari Lebih Lanjut</a>
+            </div>
+        </section>
+
+        <!-- Section: Mengapa Daur Ulang Itu Penting? -->
+        <section id="mengapa" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Mengapa Daur Ulang Itu Penting?</h2>
+                    <p class="text-muted">Daur ulang memberikan dampak positif yang besar bagi lingkungan dan kehidupan kita.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <i class="bi bi-tree"></i>
+                            <h4>Menghemat Sumber Daya</h4>
+                            <p>Mengurangi kebutuhan akan bahan baku baru, sehingga menjaga kelestarian hutan dan sumber daya alam lainnya.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <i class="bi bi-lightning-charge"></i>
+                            <h4>Menghemat Energi</h4>
+                            <p>Proses membuat produk dari bahan daur ulang membutuhkan lebih sedikit energi dibandingkan dari bahan baku baru.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <i class="bi bi-shield-check"></i>
+                            <h4>Melindungi Lingkungan</h4>
+                            <p>Mengurangi polusi udara dan air, serta mengurangi volume sampah di TPA (Tempat Pembuangan Akhir).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Jenis-Jenis Sampah -->
+        <section id="jenis-sampah" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Kenali Jenis-Jenis Sampahmu</h2>
+                    <p class="text-muted">Pemilahan sampah adalah langkah pertama yang krusial.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1594293317015-2e9c24e2d516?q=80&w=1974&auto=format&fit=crop" class="card-img-top" alt="Sampah Organik">
+                            <div class="card-body">
+                                <h5 class="card-title">Sampah Organik</h5>
+                                <p class="card-text">Sampah yang berasal dari makhluk hidup, seperti sisa makanan, sayuran, dedaunan, dan dapat terurai secara alami. Bisa dijadikan kompos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1615461066159-fea0960485d5?q=80&w=2070&auto=format&fit=crop" class="card-img-top" alt="Sampah Anorganik">
+                            <div class="card-body">
+                                <h5 class="card-title">Sampah Anorganik</h5>
+                                <p class="card-text">Sampah yang tidak mudah terurai, seperti plastik, kertas, logam, kaca. Jenis ini paling potensial untuk didaur ulang.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1605601064556-830822478621?q=80&w=1974&auto=format&fit=crop" class="card-img-top" alt="Sampah B3">
+                            <div class="card-body">
+                                <h5 class="card-title">Sampah B3 (Bahan Berbahaya & Beracun)</h5>
+                                <p class="card-text">Sampah yang mengandung zat berbahaya, seperti baterai, pestisida, dan kaleng cat. Perlu penanganan khusus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Cara Memulai -->
+        <section id="cara-memulai" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Cara Memulai Daur Ulang di Rumah</h2>
+                    <p class="text-muted">Mudah dan siapa saja bisa melakukannya!</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="step-box">
+                            <div class="step-number">1</div>
+                            <h5>Pisahkan</h5>
+                            <p>Sediakan tempat sampah terpisah untuk organik dan anorganik.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="step-box">
+                            <div class="step-number">2</div>
+                            <h5>Cuci Bersih</h5>
+                            <p>Bilas wadah atau kemasan (plastik, gelas) sebelum dibuang.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="step-box">
+                            <div class="step-number">3</div>
+                            <h5>Kumpulkan</h5>
+                            <p>Simpan sampah anorganik yang sudah bersih dan kering.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="step-box">
+                            <div class="step-number">4</div>
+                            <h5>Serahkan</h5>
+                            <p>Antarkan ke bank sampah, tukar dengan uang, atau berikan kepada pemulung.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Kontak / Bergabung -->
+        <section id="kontak" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Bergabung Bersama Kami</h2>
+                    <p class="text-muted">Punya pertanyaan atau ingin berkontribusi? Hubungi kami!</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="nama" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="nama" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subjek" class="form-label">Subjek</label>
+                                <input type="text" class="form-control" id="subjek">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pesan" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="pesan" rows="5" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Kirim Pesan</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 DaurUlangMandiri. Hak Cipta Dilindungi.</p>
+            <p>
+                <a href="#"><i class="bi bi-facebook"></i></a> |
+                <a href="#"><i class="bi bi-instagram"></i></a> |
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
